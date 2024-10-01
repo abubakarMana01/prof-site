@@ -1,0 +1,46 @@
+---
+const date = new Date();
+const currentTime =
+  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+console.log(currentTime);
+---
+
+<footer class="w-full bg-white px-4 py-4 sm:px-6
+  md:px-16">
+  <div class="flex flex-col items-center py-12">
+    <p class="text-xl font-medium mb-4">Have a project?</p>
+    <h1 class="text-4xl font-semibold mb-8">Let's talk with me</h1>
+    <button class="bg-black text-white w-fit py-2 px-4 rounded-lg text-sm mb-3"
+      >Talk with me</button
+    >
+    <p class="text-sm">
+      My Local time <span class="font-bold">{currentTime}</span>
+    </p>
+  </div>
+  <div class="flex justify-between">
+    <div class="flex gap-x-4 items-center">
+      <h3 class="text-2xl font-semibold">Alex</h3>
+      <h3 class="text-gray-500 font-medium">
+        Designer | Developer | Freelancer
+      </h3>
+    </div>
+    <nav>
+      <div id="contactUs" class="flex gap-2 text-sm">
+        <i
+          class="fa-brands fa-facebook-f rounded-full border-2 border-lime-950 bg-transparent w-8 h-8 flex justify-center items-center cursor-pointer"
+          onclick="window.open('https://www.facebook.com/', '_blank');"
+        >
+        </i>
+        <i
+          class="fa-brands fa-instagram rounded-full border-2 border-lime-950 w-8 h-8 flex justify-center items-center cursor-pointer"
+          onclick="window.open('https://www.instagram.com/', '_blank');"></i>
+        <i
+          class="fa-brands fa-youtube rounded-full border-2 border-lime-950 w-8 h-8 flex justify-center items-center cursor-pointer"
+          onclick="window.open('https://www.youtube.com/', '_blank');"></i>
+        <i
+          class="fa-brands fa-twitter rounded-full border-2 border-lime-950 w-8 h-8 flex justify-center items-center cursor-pointer"
+          onclick="window.open('https://twitter.com/', '_blank');"></i>
+      </div>
+    </nav>
+  </div>
+</footer>

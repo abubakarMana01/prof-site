@@ -1,0 +1,92 @@
+---
+
+---
+
+<header
+  class="bg-[#040b14] flex flex-row items-center
+  justify-between
+  py-3
+  fixed
+  w-full z-50 gap-y-4"
+>
+  <div class="p-8px px-6
+  sm:px-6
+  md:px-16">
+    <img
+      src="/images/photograph.jpg"
+      alt="ME"
+      class="w-14 h-14 rounded-full border-[5px] border-gray-800"
+    />
+  </div>
+  <nav
+    class="dropdownMenu hidden sm:flex flex-col sm:flex-row gap-y-5 md:flex-row gap-x-4 lg:gap-x-8 text-md py-4"
+  >
+    <li class="list-none"><a href="#home" class="text-white">Home</a></li>
+    <li class="list-none"><a href="#about" class="text-white">About</a></li>
+    <li class="list-none"><a href="#resume" class="text-white">Resume</a></li>
+    <li class="list-none">
+      <a href="#portfolio" class="text-white">Porfolio</a>
+    </li>
+    <li class="list-none">
+      <a href="#services" class="text-white">Services</a>
+    </li>
+    <li class="list-none"><a href="#contact" class="text-white">Contact</a></li>
+  </nav>
+  <div class="navbar-icons flex cursor-pointer px-6
+  sm:px-6
+  md:px-16">
+    <i class="fa-solid fa-bars block text-2xl sm:hidden z-[1000] text-white"
+    ></i>
+  </div>
+</header>
+
+<style>
+  @media (min-width: 640px) {
+    .header.active {
+      background-color: #d09e33;
+    }
+  }
+  @media (max-width: 767px) {
+    .show {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      position: absolute;
+      bottom: 100%;
+      background-color: #040b14;
+      height: max-content;
+      color: white;
+      transform: all 2000ms ease-in;
+      animation: slideIn 0.3s ease forwards;
+      box-shadow: antiquewhite;
+    }
+  }
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(356px);
+    }
+  }
+</style>
+
+<script>
+  const hamburger = document.querySelector(".navbar-icons .fa-solid");
+  const dropdownMenu = document.querySelector(".dropdownMenu");
+
+  hamburger?.addEventListener("click", () => {
+    dropdownMenu?.classList.toggle("show");
+    if (hamburger.classList.contains("fa-bars")) {
+      hamburger.classList.remove("fa-bars");
+      hamburger.classList.add("fa-xmark");
+    } else {
+      hamburger.classList.add("fa-bars");
+      hamburger.classList.remove("fa-xmark");
+    }
+  });
+</script>
