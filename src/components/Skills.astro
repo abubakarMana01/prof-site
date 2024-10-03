@@ -1,0 +1,93 @@
+---
+const skillLevels = {
+  HTML: 100,
+  CSS: 90,
+  JAVASCRIPT: 75,
+  PHP: 80,
+  WORDPRESS: 90,
+  PHOTOSHOP: 55,
+};
+---
+
+<div class="mb-16 bg-[#f4fafd] sm:py-12 lg:py-20 p-6
+  sm:px-24
+  md:px-36">
+  <h1 class="header text-4xl font-semibold flex flex-col w-max">Skills</h1>
+  <p class="text-lg">
+    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur
+    velit
+  </p>
+  <div class="sm:columns-2 gap-x-6">
+    <div class="flex flex-col gap-y-[0.75rem] mb-8">
+      <div class="flex justify-between items-center">
+        <label for="HTML">HTML</label>
+        <p>{skillLevels.HTML}%</p>
+      </div>
+      <progress id="HTML" value={skillLevels.HTML} max="100" class="w-full"
+      ></progress>
+    </div><div class="flex flex-col gap-y-[0.75rem] mb-8">
+      <div class="flex justify-between items-center">
+        <label for="CSS">CSS</label>
+        <p>{skillLevels.CSS}%</p>
+      </div>
+      <progress id="CSS" value={skillLevels.CSS} max="100" class="w-full"
+      ></progress>
+    </div>
+    <div class="flex flex-col gap-y-[0.75rem] mb-8">
+      <div class="flex justify-between items-center">
+        <label for="JAVSCRIPT">JAVASCRIPT</label>
+        <p>{skillLevels.JAVASCRIPT}</p>
+      </div>
+      <progress
+        id="JAVSCRIPT"
+        value={skillLevels.JAVASCRIPT}
+        max="100"
+        class="w-full"></progress>
+    </div>
+    <div class="flex flex-col gap-y-[0.75rem] mb-8">
+      <div class="flex justify-between items-center">
+        <label for="PHP">PHP</label>
+        <p>{skillLevels.PHP}%</p>
+      </div>
+      <progress id="PHP" value={skillLevels.PHP} max="100" class="w-full"
+      ></progress>
+    </div>
+    <div class="flex flex-col gap-y-[0.75rem] mb-8">
+      <div class="flex justify-between items-center">
+        <label for="WORDPRESS">WORDPRESS/CMS</label>
+        <p>{skillLevels.WORDPRESS}%</p>
+      </div>
+      <progress
+        id="WORDPRESS"
+        value={skillLevels.WORDPRESS}
+        max="100"
+        class="w-full"></progress>
+    </div>
+    <div class="flex flex-col gap-y-[0.75rem] mb-8">
+      <div class="flex justify-between items-center">
+        <label for="PHOTOSHOP">PHOTOSHOP</label>
+        <p>{skillLevels.PHOTOSHOP}%</p>
+      </div>
+      <progress
+        id="PHOTOSHOP"
+        value={skillLevels.PHOTOSHOP}
+        max="100"
+        class="w-full"></progress>
+    </div>
+  </div>
+</div>
+<style>
+  .header::after {
+    content: "";
+    width: 60%;
+    background-color: #3aa7e2;
+    height: 4px;
+    margin-block: 1.5rem;
+  }
+  progress::-webkit-progress-bar {
+    background: #e9ecef;
+  }
+  progress::-webkit-progress-value {
+    background-color: #149ddd;
+  }
+</style>
