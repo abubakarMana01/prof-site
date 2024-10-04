@@ -2,94 +2,88 @@
 
 ---
 
-<header
-  class="bg-[#040b14] flex flex-row items-center
-  justify-between
-  py-3
+<div class="bg-[#040b14] py-3 px-4
   fixed
-  w-full z-50 gap-y-4"
->
-  <a href="/" class="p-8px mx-6
-  sm:mx-6
-  md:mx-16">
-    <img
-      src="/images/photograph.jpg"
-      alt="ME"
-      class="w-14 h-14 rounded-full border-[5px] border-gray-800"
-    />
-  </a>
-  <nav
-    class="dropdownMenu hidden sm:flex flex-col sm:flex-row gap-y-5 md:flex-row gap-x-4 lg:gap-x-8 text-md py-4
-  sm:mx-6
-  md:mx-16"
-  >
-    <li class="list-none"><a href="#home" class="text-white">Home</a></li>
-    <li class="list-none"><a href="#about" class="text-white">About</a></li>
-    <li class="list-none"><a href="#resume" class="text-white">Resume</a></li>
-    <li class="list-none">
-      <a href="#portfolio" class="text-white">Porfolio</a>
-    </li>
-    <li class="list-none">
-      <a href="#services" class="text-white">Services</a>
-    </li>
-    <li class="list-none"><a href="#contact" class="text-white">Contact</a></li>
-  </nav>
-  <div
-    class="block sm:hidden navbar-icons cursor-pointer mx-6
-  sm:mx-6
-  md:mx-16"
-  >
-    <i class="fa-solid fa-bars text-2xl z-[1000] text-white"></i>
-  </div>
-</header>
+  w-full z-50">
+	<header class="max-w-[1440px] mx-auto flex flex-row items-center
+  justify-between
+   gap-y-4">
+		<a href="/">
+			<img
+				src="/images/photograph.jpg"
+				alt="ME"
+				class="w-14 h-14 rounded-full border-[5px] border-gray-800 object-cover bg-top"
+			/>
+		</a>
+		<nav
+			class="dropdownMenu hidden sm:flex flex-col sm:flex-row gap-y-5 md:flex-row gap-x-4 lg:gap-x-12 text-md py-4"
+		>
+			<li class="list-none"><a href="#home" class="text-white hover:text-opacity-70">Home</a></li>
+			<li class="list-none"><a href="#about" class="text-white hover:text-opacity-70">About</a></li>
+			<li class="list-none"><a href="#resume" class="text-white hover:text-opacity-70">Resume</a></li>
+			<li class="list-none">
+				<a href="#portfolio" class="text-white hover:text-opacity-70">Porfolio</a>
+			</li>
+			<li class="list-none">
+				<a href="#services" class="text-white hover:text-opacity-70">Services</a>
+			</li>
+			<li class="list-none">
+				<a href="#contact" class="text-white hover:text-opacity-70">Contact</a>
+			</li>
+		</nav>
+		<div class="block sm:hidden navbar-icons cursor-pointer">
+			<i class="fa-solid fa-bars text-2xl z-[1000] text-white"></i>
+		</div>
+	</header>
+</div>
 
 <style>
-  @media (min-width: 640px) {
-    .header.active {
-      background-color: #d09e33;
-    }
-  }
-  @media (max-width: 767px) {
-    .show {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100vw;
-      position: absolute;
-      bottom: 100%;
-      background-color: #040b14;
-      height: max-content;
-      color: white;
-      transform: all 2000ms ease-in;
-      animation: slideIn 0.3s ease forwards;
-      box-shadow: antiquewhite;
-    }
-  }
-  @keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateY(0);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(356px);
-    }
-  }
+	@media (min-width: 640px) {
+		.header.active {
+			background-color: #d09e33;
+		}
+	}
+	@media (max-width: 767px) {
+		.show {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 100vw;
+			position: absolute;
+			bottom: 100%;
+			background-color: #040b14;
+			height: max-content;
+			color: white;
+			transform: all 2000ms ease-in;
+			animation: slideIn 0.3s ease forwards;
+			box-shadow: antiquewhite;
+		}
+	}
+	@keyframes slideIn {
+		from {
+			opacity: 0;
+			transform: translateY(0);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(356px);
+		}
+	}
 </style>
 
 <script>
-  const hamburger = document.querySelector(".navbar-icons .fa-solid");
-  const dropdownMenu = document.querySelector(".dropdownMenu");
+	const hamburger = document.querySelector('.navbar-icons .fa-solid');
+	const dropdownMenu = document.querySelector('.dropdownMenu');
 
-  hamburger?.addEventListener("click", () => {
-    dropdownMenu?.classList.toggle("show");
-    if (hamburger.classList.contains("fa-bars")) {
-      hamburger.classList.remove("fa-bars");
-      hamburger.classList.add("fa-xmark");
-    } else {
-      hamburger.classList.add("fa-bars");
-      hamburger.classList.remove("fa-xmark");
-    }
-  });
+	hamburger?.addEventListener('click', () => {
+		dropdownMenu?.classList.toggle('show');
+		if (hamburger.classList.contains('fa-bars')) {
+			hamburger.classList.remove('fa-bars');
+			hamburger.classList.add('fa-xmark');
+		} else {
+			hamburger.classList.add('fa-bars');
+			hamburger.classList.remove('fa-xmark');
+		}
+	});
 </script>
