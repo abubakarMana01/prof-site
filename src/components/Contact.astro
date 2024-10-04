@@ -9,13 +9,95 @@
       consectetur velit
     </p>
   </div>
+  <div class="flex flex-col lg:flex-row gap-8">
+    <div class="shadow-xl bg-white p-8 lg:w-[40%]">
+      <div>
+        <div class="flex mb-8">
+          <div
+            class="rounded-full flex justify-center items-center bg-[#d1f0fe] text-blue-400 h-10 w-10 mr-4"
+          >
+            <i class="fa-light fa-face-smile text-2xl p-2"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg">Address</h3>
+            <p class="text-sm">A108 Adam Street, New York, NY 535022</p>
+          </div>
+        </div>
+        <div class="flex mb-8">
+          <div
+            class="rounded-full flex justify-center items-center bg-[#d1f0fe] text-blue-400 h-10 w-10 mr-4"
+          >
+            <i class="fa-light fa-face-smile text-2xl p-2"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg">Address</h3>
+            <p class="text-sm">A108 Adam Street, New York, NY 535022</p>
+          </div>
+        </div>
+        <div class="flex mb-8">
+          <div
+            class="rounded-full flex justify-center items-center bg-[#d1f0fe] text-blue-400 h-10 w-10 mr-4"
+          >
+            <i class="fa-light fa-face-smile text-2xl p-2"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg">Address</h3>
+            <p class="text-sm">A108 Adam Street, New York, NY 535022</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.761278758747!2d7.058523774739616!3d4.811002995164453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cd73184a6029%3A0xc312fa765f28f192!2sCircular%20road%20woji!5e0!3m2!1sen!2sng!4v1725638169560!5m2!1sen!2sng"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="w-full h-[250px]"
+        >
+        </iframe>
+      </div>
+    </div>
+    <div class="shadow-xl bg-white p-8 lg:w-[60%] flex flex-col gap-y-4">
+      <div>
+        <div class="xl:flex justify-between gap-x-6">
+          <div class="flex flex-col w-full">
+            <label class="mb-2" for="name"> Your Name </label>
+            <input type="text" class="border-[1px] border-gray-300 h-10 px-1" />
+          </div>
+          <div class="flex flex-col w-full">
+            <label class="mb-2" for="mail"> Your Email </label>
+            <input type="text" class="border-[1px] border-gray-300 h-10 px-1" />
+          </div>
+        </div>
+        <div class="flex flex-col w-full">
+          <label class="mb-2" for="subject">Subject</label>
+          <input type="text" class="border-[1px] border-gray-300 h-10" />
+        </div>
+        <div class="flex flex-col w-full">
+          <label class="mb-2" for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            class="border-[1px] border-gray-300 h-[250px]"
+          >
+          </textarea>
+        </div>
+      </div>
+      <button
+        class="bg-[#149ddd] w-fit px-8 py-2 rounded-full mx-auto text-white text-sm cursor-pointer"
+        >Send Message</button
+      >
+    </div>
+
+    <style>
+      .header::after {
+        content: "";
+        width: 40%;
+        background-color: #3aa7e2;
+        height: 4px;
+        margin-block: 1.5rem;
+      }
+    </style>
+  </div>
 </section>
-<style>
-  .header::after {
-    content: "";
-    width: 40%;
-    background-color: #3aa7e2;
-    height: 4px;
-    margin-block: 1.5rem;
-  }
-</style>
