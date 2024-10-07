@@ -3,30 +3,33 @@
 ---
 
 <section
-  style={{ backgroundImage: "url(/images/hero.jpg)" }}
-  class="h-screen w-full bg-no-repeat bg-cover bg-center flex items-center px-6
+	style={{ backgroundImage: 'url(/images/photograph.png)' }}
+	class="h-[calc(100vh-200px)] relative w-full bg-no-repeat bg-cover bg-center flex items-center px-6
   sm:px-24
   md:px-36"
 >
-  <div class="space-y-4">
-    <h1 class="text-white text-6xl font-bold">Alex Smith</h1>
-    <h2 class="text-white text-3xl font-medium">
-      I'm <span
-        id="auto-type"
-        class="underline decoration-[#149ddd] underline-offset-[8px]"></span>
-    </h2>
-  </div>
+	<span class="absolute inset-0 bg-[rgba(0,0,0,0.6)]"></span>
+	<div class="space-y-4 z-10">
+		<h1 class="text-white text-3xl md:text-4xl lg:text-6xl font-bold">Prof. Joseph Atubokiki Ajienka</h1>
+		<h2 class="text-white text-base lg:text-xl text-opacity-80 font-medium max-w-[800px] leading-[160%]">
+			<span
+				id="auto-type"
+				class=""></span>
+		</h2>
+	</div>
 </section>
 
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var typed = new Typed("#auto-type", {
-      strings: ["Designer", "Developer", "Freelancer", "Photographer"],
-      typeSpeed: 50,
-      backSpeed: 50,
-      loop: true,
-    });
-  });
+	document.addEventListener('DOMContentLoaded', function () {
+		var typed = new Typed('#auto-type', {
+			strings: [
+				'PhD, FAEng, FNSE, FIPS, FNIIA, FNIM, FISPON, FNES, PE (COREN, Nigeria), M. Inst. Pet. (Lond.), SPE, REP (USA) Hon. Degree, IFP School, Paris',
+			],
+			typeSpeed: 50,
+			backSpeed: 50,
+			loop: true,
+		});
+	});
 </script>
